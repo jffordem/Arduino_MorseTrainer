@@ -58,7 +58,7 @@
 
 #define DEBUG
 
-int charSpeed = 10; // Character speed in WPM, using 'PARIS' as the standard word.
+int charSpeed = 12; // Character speed in WPM, using 'PARIS' as the standard word.
 int farnsworthSpeed = 10; // Spacing between letters and words.  Usually lower than character speed.
 bool ledState = LOW;
 int kochLevel = 0;
@@ -111,18 +111,4 @@ void loop() {
 #else
   schedule.poll();
 #endif
-
-  /*
-  if (Serial.available()) {
-    String s = Serial.readString();
-    s.trim();
-    Serial.print("Received '");
-    Serial.print(s);
-    Serial.println("'");
-    if (s.length() > 0) {
-      //text.update(s);
-      delay(250);
-    }
-  }
-  */
 }
