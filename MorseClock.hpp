@@ -23,6 +23,7 @@ public:
       }
     }
   }
+  bool enabled() const { return _enabled; }
   void toggle() { enable(!_enabled); }
   void poll() {
     if (_timer.expired() && _enabled) {
