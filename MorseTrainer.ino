@@ -48,15 +48,17 @@
 
 #include "ElizaWords.hpp"
 
+
 #include "MorseStream.hpp"
 #include "MorseClock.hpp"
 #include "Randomizer.hpp"
 
 // BE SURE TO PICK THE RIGHT LAYOUT
 // #include <BreadboardConfig.hpp>
-#include <LeonardoConfig.hpp>
+// #include <LeonardoConfig.hpp>
+#include <MinimaConfig.hpp>
 
-#define DEBUG
+// #define DEBUG
 
 int charSpeed = 12; // Character speed in WPM, using 'PARIS' as the standard word.
 int farnsworthSpeed = 10; // Spacing between letters and words.  Usually lower than character speed.
